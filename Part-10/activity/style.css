@@ -1,0 +1,42 @@
+*{
+    padding: 0;
+    margin: auto;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    background-color: azure;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+h1{
+    padding: 30px;
+}
+
+button{
+    padding: 8px;
+    border: none;
+    margin-bottom: 20px;
+
+}
+
+button:hover{
+    border: 1px solid black;
+    border-radius: 5px;
+    
+}
+
+.check{
+    border: 1px solid black;
+    width: 50%;
+    height: 300px;
+    text-align: center;
+    display: flex;
+    justify-items: center;
+}
+
+
+
