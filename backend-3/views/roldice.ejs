@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roll dice</title>
+</head>
+<body>
+    
+    <h1>Roll dice for number</h1>
+    <button>Roll</button>
+
+    <script>
+        let rollbutton = document.querySelector('button');
+        let number = document.querySelector('h1');
+        rollbutton.addEventListener('click',()=>{
+            number.innerText = random();
+        })
+
+
+        function random(){
+            let random = Math.floor(Math.random()*6)+1;
+            return random;
+        }
+    </script>
+</body>
+</html>
