@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style.css">
+    <title>Chatting app</title>
+</head>
+<body>
+    <h1>Chatting app</h1>
+    <form action="/chat/new" method="get">
+        <button class="neon-button">New Chat</button>
+    </form>
+        <% for (let chat of chats) { %> <!-- Use 'chats' here as passed from the server -->
+        <div>
+        <p class="from"><%= chat.from %></p>
+        <p class="to"><%= chat.to %></p>
+        <p><%= chat.message %></p>
+        </div>
+    <% } %>
+   
+    
+</body>
+</html>
